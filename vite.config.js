@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/tatiana/', // Cambia 'tatiana' por el nombre de tu repositorio
+  base: '/Camisetera/', // Cambia 'tatiana' por el nombre de tu repositorio
 })

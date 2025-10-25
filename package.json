@@ -2,7 +2,7 @@
   "name": "la-camiseteria",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[TU-USUARIO].github.io/tatiana",
+  "homepage": "https://bokhi6.github.io/Camisetera",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
