@@ -74,20 +74,19 @@ export default function App() {
             mt: 4,
             mb: 6,
             justifyContent: 'center',
-            flexWrap: 'nowrap',
-            overflowX: 'auto',
-            '@media (min-width: 900px)': {
-              flexWrap: 'nowrap'
-            }
+            flexWrap: { xs: 'wrap', md: 'nowrap' },
+            flexDirection: { xs: 'column', md: 'row' },
+            alignItems: { xs: 'center', md: 'stretch' }
           }}
         >
           {products.map((p) => (
             <Box 
               key={p.id} 
               sx={{ 
-                flex: '1 1 0',
-                minWidth: { xs: '280px', md: '320px' },
-                maxWidth: { xs: '350px', md: '400px' }
+                flex: { xs: '0 0 auto', md: '1 1 0' },
+                width: { xs: '100%', sm: '90%', md: 'auto' },
+                maxWidth: { xs: '400px', md: '400px' },
+                minWidth: { md: '320px' }
               }}
             >
               <ProductCard product={p} onPreview={() => setPreview(p)} />
