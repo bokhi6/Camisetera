@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom overrides / small helpers */
+body{@apply bg-slate-50 text-slate-900;}
+.hero{@apply bg-gradient-to-r from-green-700 to-green-800 text-white py-8 text-center}
+.hero h1{@apply text-3xl font-bold}
+.hero p{@apply mt-2 text-sm}
+.catalog{@apply grid gap-6 p-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1100px] mx-auto}
+.footer{@apply text-center p-4 text-slate-500}
+
+.mui-card-img{width:160px;height:160px;object-fit:contain;margin:0 auto}
+
